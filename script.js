@@ -60,11 +60,13 @@ document.addEventListener("DOMContentLoaded", () => {
 
                 // lisätään elokuvan tiedot HTML-koodina
                 movieDiv.innerHTML = `
-                    <h3>${title}</h3>
-                    <img src="${img}" alt="${title}">
-                    <p>Esitysaika: ${new Date(showtime).toLocaleString()}</p>
-                `;
-                movieInfoContainer.appendChild(movieDiv); // lisätään elokuvan div konttiin
+                <h3>${title}</h3>
+                <img src="${largeImage}" alt="${title}" class="large-image">
+                <img src="${mediumImage}" alt="${title}" class="medium-image">
+                <p>${description}</p>
+                <p><strong>Esitysaika:</strong> ${new Date(showtime).toLocaleString()}</p>
+            `;
+            movieInfoContainer.appendChild(movieDiv);
             }
         } catch (error) {
             console.error("Virhe elokuvien lataamisessa:", error); // virheilmoitus, jos pyyntö epäonnistuu
