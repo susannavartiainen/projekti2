@@ -1,39 +1,31 @@
 body {
     font-family: Arial, sans-serif;
-    margin: 0;
-    padding: 0;
     background-color: #f4f4f4;
-}
-
-.container {
-    width: 80%;
-    margin: auto;
-    overflow: hidden;
+    margin: 0;
     padding: 20px;
 }
 
 h1 {
-    text-align: center;
+    color: #333;
 }
 
-label {
-    display: block;
-    margin-bottom: 10px;
-}
-
-#theater, #fetch-movies {
-    margin-bottom: 20px;
+#movieInfoContainer {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 20px;
+    margin-top: 20px;
 }
 
 .movie {
-    border: 1px solid #ccc;
-    border-radius: 5px;
-    margin: 10px 0;
+    border: 1px solid #ddd;
+    border-radius: 8px;
     padding: 10px;
+    width: 200px;
     background-color: white;
+    text-align: center;
 }
 
 .movie img {
-    width: 100%;
+    max-width: 100%;
     border-radius: 5px;
 }

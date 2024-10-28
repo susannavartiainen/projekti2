@@ -7,17 +7,18 @@
     <link rel="stylesheet" href="styles.css">
 </head>
 <body>
-    <div class="container">
-        <h1>Finnkino</h1>
-        <label for="theater">Valitse teatteri:</label>
-        <select id="theater"></select>
-        
-        <button id="fetch-movies">Elokuvat</button>
-        
-        <div id="movies-container"></div>
-    </div>
+    <h1>Movie Information App</h1>
+    <label for="theaterSelect">Choose a Theater:</label>
+    <select id="theaterSelect"></select>
     
-    <script src="app.js"></script>
+    <label for="searchInput">Search Movie:</label>
+    <input type="text" id="searchInput" placeholder="Type movie name...">
+    
+    <button id="searchButton">Search</button>
+    
+    <div id="movieInfoContainer"></div>
+
+    <script src="script.js"></script>
 </body>
 </html>
 
