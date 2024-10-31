@@ -1,24 +1,42 @@
-<!DOCTYPE html>
-<html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Movie Information App</title>
-    <link rel="stylesheet" href="style.css">
-</head>
-<body>
-    <h1>Movie Information App</h1>
-    <label for="theaterSelect">Choose a Theater:</label>
-    <select id="theaterSelect"></select>
-    
-    <label for="searchInput">Search Movie:</label>
-    <input type="text" id="searchInput" placeholder="Type movie name...">
-    
-    <button id="searchButton">Search</button>
-    
-    <div id="movieInfoContainer"></div>
+<!doctype html>
+<html lang="fi">
+    <head>
+        <meta charset="utf-8">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
+        <title>Finnkino Elokuvien Tietosivu</title>
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+        <link rel="stylesheet" type="text/css" href="style.css">
+    </head>
+    <body>
+        <header>
+            <h1>Finnkino Elokuvatiedot</h1>
+            <nav>
+                <ul id="main-menu">
+                    <li><a href="#">Kotisivu</a></li>
+                    <li><a href="#">Elokuvat</a></li>
+                    <li><a href="#">Teatterit</a></li>
+                    <li><a href="#">Yhteystiedot</a></li>
+                </ul>
+            </nav>
+        </header>
 
-    <script src="script.js"></script>
-</body>
+        <main>
+            <section id="search-section">
+                <label for="theater-select">Valitse teatteri:</label>
+                <select id="theater-select">
+                    <option value="">-- Valitse teatteri --</option>
+                
+                </select>
+                <button id="search-button" class="button">Hae elokuvia</button>
+            </section>
+
+            <section id="movies-section">
+               
+            </section>
+        </main>
+
+        <footer>@Finnkino Tiedot 2023</footer>
+
+        <script src="app.js"></script>
+    </body>
 </html>
-
